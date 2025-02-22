@@ -8,5 +8,6 @@ public class Main {
         int b = 13;
         Solution obj = new Solution();
         System.out.println(Arrays.toString(obj.twoSum(a,b)));
+        System.out.println(Arrays.toString(obj.twoum(a,b)));
     }
 }

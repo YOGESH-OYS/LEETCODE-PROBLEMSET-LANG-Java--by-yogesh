@@ -11,4 +11,15 @@ class Solution {
         }
         return rev==temp;
     }
+    public boolean isPalin(int x) {
+        if(x < 0){ return false; }
+        return x == Helper(x,0);
+    }
+    public int Helper(int x,int sum){
+        if (x == 0){
+            return sum;
+        }
+        sum = sum*10 + x%10;
+        return Helper(x/10,sum);
+    }
 }
